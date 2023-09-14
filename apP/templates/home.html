@@ -3,6 +3,7 @@
 {% load static %}
 {% block title %} Home {% endblock %}
 {% block content %}
+
 <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,4 +56,18 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      {% for category in categorys_value %}
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="{{category.category_image.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{category.category_name}}</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+  </div>
+  {% endfor %}
 {% endblock %}
