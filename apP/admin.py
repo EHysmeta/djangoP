@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(Item)
 admin.site.register(Staff)
 admin.site.register(category)
+admin.site.register(Contact)

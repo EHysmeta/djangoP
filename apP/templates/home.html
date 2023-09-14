@@ -37,15 +37,15 @@
       <div class="col">
         <div class="card" style="width: 18rem;">
         </div>
-      </div>
-      {% endfor %}
+      
             <img src="{{item.item_img.jpg}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{item.item.title}}</h5>
               <p class="card-text">{{item.description}}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="{% url 'detail' item.item_id %}" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
+          {% endfor %}
         Column
       </div>
       <div class="col">
@@ -61,11 +61,11 @@
       {% for category in categorys_value %}
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <img src="{{category.category_image.url}}" class="card-img-top" alt="...">
+          <img src="{{category.category_image.url}}" class="card-img-top" alt="...">Category</a>
           <div class="card-body">
             <h5 class="card-title">{{category.category_name}}</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="{% url 'category' category.pk %}" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
   </div>
