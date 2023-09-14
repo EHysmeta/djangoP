@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base/index.html' %}
+
+{% block title %} Contacts {% endblock %}
+{% block content %}
+<h1>Contacts page</h1>
+<form method="POST">
+    {% csrf_token %}
+    <div>
+        <label for="emri">Emri</label>
+        <input type="text" id="emri" name="emri">
+    </div>
+    <div>
+        <label for="mbiemri">Mbiemri</label>
+        <input type="text" id="mbiemri" name="mbiemri">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div>
+        <label for="sms">Mesazh</label>
+        <input type="sms" id="cols" rows="10"><textarea>
+    </div>
+    <input type="submit" value="Dergo">
+    </form>
+{% endblock %}
