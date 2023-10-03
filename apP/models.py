@@ -14,7 +14,7 @@ class Item(models.Model):
     item_category = models.ForeignKey(category, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
-        return f'(self.iteml_title)'
+        return f'{self.item_title}'
     
 class Staff(models.Model):
     staff_id = models.AutoField(primary_key=True)
