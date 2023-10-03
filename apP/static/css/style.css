@@ -1,9 +1,29 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    border: 1px solid red;
 }
 body{
     font-size: 1 rem;
     line-height: 1.5;
     letter-spacing: 1px;
+}
+
+.card-img-top{
+    height: 55%;
+    width: 20%;
+}
+.carousel{
+    /* height: 85%; */
+    width: 80%; 
+    margin: 0 auto;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+}
+.carousel-inner img,.carousel-inner{
+    height:400px;
+}
+nav{
+    background-color: gray;
+
 }
