@@ -4,21 +4,18 @@
 {% block title %} About {% endblock %}
 {% block content %}
 <h1>About page</h1>
-<div class="container">
-    <div class="row">
-        {% for staff in itemst_value %}
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="{{staff.staff_image.url}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </div>
-        {% endfor %}
+
+
     </div>
+</div><div class="card">
+  <h5 class="card-header">More about the Website</h5>
+  <div class="card-body">
+    <h5 class="card-title">Why I created this Website</h5>
+    <p class="card-text">This project of mine took about 4 months to make.While I was programming this website i was also learning more about the programming world.Before wtarting it i had little to no information about programming.It was difficult as id
+      get errors that i didnt know existed, but thank to Dominusoft I found it easier to create the project.
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
     </div>
   </div>
