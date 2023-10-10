@@ -1,12 +1,13 @@
-* {
+/** {
     margin: 0;
     padding: 0;
     border: 1px solid red;
-}
+}*/
 body{
     font-size: 1 rem;
     line-height: 1.5;
     letter-spacing: 1px;
+    background-color:beige;
 }
 
 .card-img-top{
@@ -24,6 +25,10 @@ body{
     height:400px;
 }
 nav{
-    background-color: gray;
+    background-color:darkgreen;
+
+}
+.footer{
+    background-color: black;
 
 }
