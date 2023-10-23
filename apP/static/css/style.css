@@ -7,7 +7,10 @@ body{
     font-size: 1 rem;
     line-height: 1.5;
     letter-spacing: 1px;
-    background-color:beige;
+    background-color:white;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top{
@@ -24,11 +27,9 @@ body{
 .carousel-inner img,.carousel-inner{
     height:400px;
 }
-nav{
-    background-color:darkgreen;
+footer{
+    margin-top: 40px;
 
 }
-.footer{
-    background-color: black;
 
-}
+

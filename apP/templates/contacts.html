@@ -4,14 +4,18 @@
 {% block title %} Contacts {% endblock %}
 {% block content %}
 <h1>Contacts page</h1>
+<h3 style="font-family:monospace ;   color: red; ;">
+If you have any questions or want to leave a review aboute the webside put your info in the empty brackets below!
+</h3>
+
 <form method="POST">
     {% csrf_token %}
     <div>
-        <label for="emri">Emri</label>
+        <label for="emri">Name</label>
         <input type="text" id="emri" name="emri">
     </div>
     <div>
-        <label for="mbiemri">Mbiemri</label>
+        <label for="mbiemri">Surname</label>
         <input type="text" id="mbiemri" name="mbiemri">
     </div>
     <div>
@@ -19,9 +23,10 @@
         <input type="email" id="email" name="email">
     </div>
     <div>
-        <label for="sms">Mesazh</label>
-        <input type="sms" id="cols" rows="10"><textarea>
+        <label for="sms">Message</label>
+        <input type="sms" id="cols" rows="10">
     </div>
     <input type="submit" value="Dergo">
     </form>
+   <h3 style="font-family: monospace;color:red;">If you want to contact the creator of the web page personally you will find the info at the bottom!</h3> 
 {% endblock %}

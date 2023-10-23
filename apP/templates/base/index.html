@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
  
 </head>
-<body>
+<body style="background-color: cornflowerblue;">
+ 
     {% include 'base/navbar.html' %}
     {% block content %}
 
@@ -17,9 +18,9 @@
     {% comment %}
     {% include 'base/footer.html' %}
     {% endcomment %}
-    
-   <footer>
-    <footer class="text-center text-lg-start bg-light text-muted">
+</body>
+   <footer style="background-color: black;">
+    <footer class="text-center text-lg-start bg-light text-muted color-black">
       
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -139,5 +140,5 @@
    
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
    
-</body>
+
 </html>
